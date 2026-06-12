@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "planmemreplay",
-  "description": "This MEG dataset contains neuroimaging data from a study investigating planning, memory, and replay mechanisms in human cognition. The dataset includes magnetoencephalography recordings with synchronized trigger channels for precise event marking, along with detailed event timing information across multiple experimental phases (localizer, structure and reward, and post-task phases). Photodiode-calibrated timing information indicates approximately 20 ms delay between trigger signals and visual stimulus presentation.",
-  "methods_description": "Data were collected using magnetoencephalography (MEG) with trigger channels for event marking and timing. Visual stimuli were presented via projector with timing delays estimated using photodiode calibration (approximately 20 ms between trigger and visual onset, estimated value). Event files with onset times are provided for each participant across multiple experimental phases (localizer, structure and reward, and post-task). MEG trigger channels should be used for precise event onsets in analysis.",
+  "description": "This MEG dataset contains recordings from a study investigating planning, memory, and replay mechanisms in human cognition. The dataset includes magnetoencephalography recordings with synchronized trigger channels for precise event marking, along with detailed event timing information across multiple experimental phases (localizer, structure and reward learning, and post-learning). Photodiode-calibrated timing information indicates approximately 20 ms delay between trigger signals and visual stimulus presentation.",
+  "methods_description": "Data were collected using magnetoencephalography (MEG) with integrated trigger channels for event marking. Visual stimuli were presented via projector with timing calibrated using photodiode measurements, revealing approximately 20 ms delay between trigger onset and visual stimulus presentation. Event timing information is provided in separate event files organized by participant.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,7 +25,10 @@
       "term": "planning"
     },
     {
-      "term": "cognitive neuroscience"
+      "term": "learning"
+    },
+    {
+      "term": "reward learning"
     },
     {
       "term": "Magnetoencephalography",
@@ -33,16 +36,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
-      "term": "event-related magnetic fields"
-    },
-    {
-      "term": "reward"
-    },
-    {
-      "term": "decision-making"
-    },
-    {
-      "term": "navigation"
+      "term": "cognitive neuroscience"
     }
   ],
   "related_identifiers": [
@@ -105,16 +99,6 @@
     },
     {
       "funder_name": "Max Planck Society"
-    },
-    {
-      "funder_name": "University College London"
-    },
-    {
-      "funder_name": "Deutsche Forschungsgemeinschaft",
-      "award_number": "DFG fellowship (G.E.W.)"
-    },
-    {
-      "funder_name": "Max Planck University College London Centre"
     }
   ],
   "resource_type_specific": "MEG Dataset",
