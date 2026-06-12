@@ -1,50 +1,130 @@
 {
   "version": "2.0",
-  "dataset_id": "on004398",
-  "source": "openneuro",
-  "source_id": "ds004398",
+  "pipeline_stage": "enriched",
   "title": "planmemreplay",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "G. Elliott Wimmer": {},
+    "G. Elliott Wimmer": {
+      "orcid": "0000-0002-2227-119X"
+    },
     "Yunzhe Liu": {},
     "Daniel C. McNamee": {},
     "Raymond J. Dolan": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004398.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1101/2021.11.08.467745 (update to PNAS)",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004398",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004398",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2021.11.08.467745",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "",
-  "recording_modality": [
-    "meg"
-  ],
-  "datatypes": [
-    "meg"
-  ],
   "funding_references": [
-    {
-      "funder_name": "G.E.W. was supported by a fellowship from the Deutsche Forschungsgemeinschaft (DFG) and an MRC Career Development Award (MR/V032429/1)"
-    },
     {
       "funder_name": "R.D. is supported by Wellcome Trust Investigator Award 098362/ Z/12/Z."
     },
     {
-      "funder_name": "Y.L. was supported by the Open Research Fund of the State Key Laboratory of Cognitive Neuroscience and Learning."
-    },
-    {
-      "funder_name": "D.C.M. was supported by a Sir Henry Wellcome Trust Postdoctoral Research Fellowship Q: (110257/Z/15/Z)."
-    },
-    {
-      "funder_name": "The Wellcome Centre for Human Neuroimaging is supported by core funding from the Wellcome Trust (203147/Z/16/Z)."
-    },
-    {
       "funder_name": "The Max Planck University College London Centre is a joint initiative supported by University College London and the Max Planck Society."
+    },
+    {
+      "funder_name": "Deutsche Forschungsgemeinschaft",
+      "award_number": "DFG fellowship"
+    },
+    {
+      "funder_name": "Medical Research Council",
+      "award_number": "MR/V032429/1"
+    },
+    {
+      "funder_name": "Wellcome Trust",
+      "award_number": "098362/Z/12/Z"
+    },
+    {
+      "funder_name": "Wellcome Trust",
+      "award_number": "110257/Z/15/Z"
+    },
+    {
+      "funder_name": "Wellcome Trust",
+      "award_number": "203147/Z/16/Z"
+    },
+    {
+      "funder_name": "State Key Laboratory of Cognitive Neuroscience and Learning",
+      "award_number": "Open Research Fund"
+    },
+    {
+      "funder_name": "Max Planck Society"
+    },
+    {
+      "funder_name": "University College London"
     }
-  ]
+  ],
+  "modalities": [
+    "meg"
+  ],
+  "resource_type_specific": "MEG Dataset",
+  "sizes": [
+    "1.4 GB (10 files)"
+  ],
+  "formats": [
+    ".acq",
+    ".cls",
+    ".ds/tmpr6fzgs1v",
+    ".hc",
+    ".hist",
+    ".infods",
+    ".json",
+    ".md",
+    ".meg4",
+    ".newds",
+    ".res4",
+    ".yml"
+  ],
+  "description": "This MEG dataset contains recordings from a cognitive neuroscience study investigating planning, memory, and replay processes. The dataset includes trigger channels for event marking and timing, with approximately 20 ms delay between trigger signals and visual stimulus onset as measured by photodiode. Event files are provided for reference, though MEG triggers should be used for precise temporal analysis.",
+  "methods_description": "Data were collected using MEG with trigger channels for event marking. Visual stimuli were presented via projector with timing delays estimated at approximately 20 ms between trigger signal and visual onset, as calibrated using a photodiode.",
+  "keywords": [
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "memory replay"
+    },
+    {
+      "term": "planning"
+    },
+    {
+      "term": "cognitive neuroscience"
+    },
+    {
+      "term": "event-related fields"
+    },
+    {
+      "term": "magnetoencephalography"
+    },
+    {
+      "term": "neural replay"
+    },
+    {
+      "term": "decision making"
+    }
+  ],
+  "source_hash": "4ea39da26331ff0101ca3ebaec3dd60cd21b5a2f65b02c4e32209f64c94b9db4"
 }
