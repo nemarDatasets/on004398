@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "planmemreplay",
+  "description": "This MEG dataset contains neuroimaging data from a study investigating planning, memory, and replay mechanisms in human cognition. The dataset includes magnetoencephalography recordings with synchronized trigger channels for precise event marking, along with detailed event timing information across multiple experimental phases (localizer, structure and reward, and post-task phases). Photodiode-calibrated timing information indicates approximately 20 ms delay between trigger signals and visual stimulus presentation.",
+  "methods_description": "Data were collected using magnetoencephalography (MEG) with trigger channels for event marking and timing. Visual stimuli were presented via projector with timing delays estimated using photodiode calibration (approximately 20 ms between trigger and visual onset, estimated value). Event files with onset times are provided for each participant across multiple experimental phases (localizer, structure and reward, and post-task). MEG trigger channels should be used for precise event onsets in analysis.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,12 +14,38 @@
     "Daniel C. McNamee": {},
     "Raymond J. Dolan": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004398.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "memory replay"
+    },
+    {
+      "term": "planning"
+    },
+    {
+      "term": "cognitive neuroscience"
+    },
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "event-related magnetic fields"
+    },
+    {
+      "term": "reward"
+    },
+    {
+      "term": "decision-making"
+    },
+    {
+      "term": "navigation"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1101/2021.11.08.467745 (update to PNAS)",
       "identifier_type": "DOI",
@@ -37,6 +65,11 @@
       "identifier": "10.1101/2021.11.08.467745",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004398.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -75,12 +108,19 @@
     },
     {
       "funder_name": "University College London"
+    },
+    {
+      "funder_name": "Deutsche Forschungsgemeinschaft",
+      "award_number": "DFG fellowship (G.E.W.)"
+    },
+    {
+      "funder_name": "Max Planck University College London Centre"
     }
   ],
+  "resource_type_specific": "MEG Dataset",
   "modalities": [
     "meg"
   ],
-  "resource_type_specific": "MEG Dataset",
   "sizes": [
     "1.4 GB (10 files)"
   ],
@@ -98,33 +138,5 @@
     ".res4",
     ".yml"
   ],
-  "description": "This MEG dataset contains recordings from a cognitive neuroscience study investigating planning, memory, and replay processes. The dataset includes trigger channels for event marking and timing, with approximately 20 ms delay between trigger signals and visual stimulus onset as measured by photodiode. Event files are provided for reference, though MEG triggers should be used for precise temporal analysis.",
-  "methods_description": "Data were collected using MEG with trigger channels for event marking. Visual stimuli were presented via projector with timing delays estimated at approximately 20 ms between trigger signal and visual onset, as calibrated using a photodiode.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "memory replay"
-    },
-    {
-      "term": "planning"
-    },
-    {
-      "term": "cognitive neuroscience"
-    },
-    {
-      "term": "event-related fields"
-    },
-    {
-      "term": "magnetoencephalography"
-    },
-    {
-      "term": "neural replay"
-    },
-    {
-      "term": "decision making"
-    }
-  ],
-  "source_hash": "4ea39da26331ff0101ca3ebaec3dd60cd21b5a2f65b02c4e32209f64c94b9db4"
+  "source_hash": "13d173fdc1cbbe04ed9e861f0f7f52df147c7a6fcf5f1f92015d938ae661914f"
 }
