@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "planmemreplay",
-  "description": "This MEG dataset contains recordings from a study investigating planning, memory, and replay mechanisms in human cognition. The dataset includes magnetoencephalography recordings with synchronized trigger channels for precise event marking, along with detailed event timing information across multiple experimental phases (localizer, structure and reward learning, and post-learning). Photodiode-calibrated timing information indicates approximately 20 ms delay between trigger signals and visual stimulus presentation.",
-  "methods_description": "Data were collected using magnetoencephalography (MEG) with integrated trigger channels for event marking. Visual stimuli were presented via projector with timing calibrated using photodiode measurements, revealing approximately 20 ms delay between trigger onset and visual stimulus presentation. Event timing information is provided in separate event files organized by participant.",
+  "description": "MEG recordings from a study of replay during planning and memory maintenance, associated with the paper 'Distinct replay signatures for planning and memory maintenance'. The dataset includes MEG data with a trigger channel for event marking, plus event files with onsets provided for completeness. Visual event timing has an estimated projector delay of about 20 ms, measured with a photodiode.",
+  "methods_description": "MEG files contain a trigger channel for event marking and timing. Separate event files are provided for completeness only, and triggers should be used for analysis onsets. The delay between trigger and visual onset from the projector is about 20 ms, as estimated with a photodiode.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,24 +19,18 @@
       "term": "MEG"
     },
     {
-      "term": "memory replay"
+      "term": "replay"
     },
     {
       "term": "planning"
     },
     {
-      "term": "learning"
-    },
-    {
-      "term": "reward learning"
+      "term": "memory maintenance"
     },
     {
       "term": "Magnetoencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
-      "term": "cognitive neuroscience"
     }
   ],
   "related_identifiers": [
@@ -51,11 +45,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004398",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1101/2021.11.08.467745",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
@@ -64,6 +53,11 @@
       "identifier": "10.18112/openneuro.ds004398.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004398",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -71,11 +65,13 @@
       "funder_name": "R.D. is supported by Wellcome Trust Investigator Award 098362/ Z/12/Z."
     },
     {
+      "funder_name": "Y.L. was supported by the Open Research Fund of the State Key Laboratory of Cognitive Neuroscience and Learning."
+    },
+    {
       "funder_name": "The Max Planck University College London Centre is a joint initiative supported by University College London and the Max Planck Society."
     },
     {
-      "funder_name": "Deutsche Forschungsgemeinschaft",
-      "award_number": "DFG fellowship"
+      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)"
     },
     {
       "funder_name": "Medical Research Council",
@@ -94,11 +90,7 @@
       "award_number": "203147/Z/16/Z"
     },
     {
-      "funder_name": "State Key Laboratory of Cognitive Neuroscience and Learning",
-      "award_number": "Open Research Fund"
-    },
-    {
-      "funder_name": "Max Planck Society"
+      "funder_name": "Deutsche Forschungsgemeinschaft"
     }
   ],
   "resource_type_specific": "MEG Dataset",
@@ -106,7 +98,7 @@
     "meg"
   ],
   "sizes": [
-    "1.4 GB (10 files)"
+    "1.28 GB (10 files)"
   ],
   "formats": [
     ".acq",
@@ -120,6 +112,7 @@
     ".meg4",
     ".newds",
     ".res4",
+    ".tsv",
     ".yml"
   ],
   "source_hash": "13d173fdc1cbbe04ed9e861f0f7f52df147c7a6fcf5f1f92015d938ae661914f"
